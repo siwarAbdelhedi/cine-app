@@ -1,16 +1,16 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../styles/navbar.css';
 
 
 const Navbar: React.FC = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   // Handle user logout by removing the user from localStorage
-  const handleLogout = () => {
-    localStorage.removeItem('userLoggedIn');
-    navigate('/login');
-  };
+  // const handleLogout = () => {
+  //   localStorage.removeItem('userLoggedIn');
+  //   navigate('/login');
+  // };
 
   return (
     <nav className="navbar">
